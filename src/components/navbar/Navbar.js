@@ -1,13 +1,14 @@
 import React from "react";
 import './navbar.css'
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
     return(
         <div className="topNavBar">
-            <a className="active" href="#home">Home</a>.
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <Link className="active" to="/">Home</Link>.
+            <Link to="/contact">Contact</Link>
+            <Link to="/about">About</Link>
         </div>
     )
 
